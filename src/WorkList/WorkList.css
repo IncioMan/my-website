@@ -1,0 +1,22 @@
+.work-container{
+  width: 50%;
+  min-width: 300px;
+}
+
+.hidden{
+  opacity: 0;
+  visibility: hidden;
+}
+
+.show {
+  opacity: 1;
+  transition: opacity 1500ms ease-in-out;
+  transition-delay: 500ms;
+  visibility: visible;
+}  
+
+.work-item{
+  text-align: start;
+  padding: 10px 0px;
+  color: white;
+}

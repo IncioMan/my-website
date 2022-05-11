@@ -10,29 +10,79 @@
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
+    border-radius: 100%;
+    border: solid;
   }
 }
 
-.App-header {
+.App-header {  
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  flex-wrap: wrap;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.contact-logo{
+  height: 5vmin;
+  padding: 1vmin;
+  color: white;
+}
+.contact-logo:active{
+  opacity: 0.7;
+}
+
+.contacts-container{
+  padding-top: 5vmin;
+}
+
+.work-container{
+  width: 50%;
+  min-width: 300px;
+}
+
+.work-button{
+  background: white;
+    border: none;
+    color: #282c34;
+    border-radius: 4vmin;
+    padding: 1vmin 2vmin;
+    margin: 8px;
+    font-size: 3vmin;
+}
+
+.profile-container{
+  width: 50%;
+  min-width: 300px;
+  transform: translate(50%, 0%);
+}
+.slide-exit-active {
+  transform: translate(0%, 0%);
+  transition: transform 1500ms ease-in-out;
+}
+
+.work-button:hover{
+ cursor: pointer;
+}
+
+.work-button:active{
+  opacity: 0.7;
+}
+
+@media (max-width: 600px) {
+  .profile-container{
+    transform: translate(0%, 50%);
   }
-  to {
-    transform: rotate(360deg);
-  }
+  .slide-exit-active {
+    transform: translate(0%, -10%);
+    transition: transform 1500ms ease-in-out;
+  }  
 }
