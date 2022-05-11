@@ -85,4 +85,8 @@
     transform: translate(0%, -10%);
     transition: transform 1500ms ease-in-out;
   }  
+  .work-button{
+      padding: 2vmin 3vmin;
+      font-size: 4vmin;
+  }
 }
