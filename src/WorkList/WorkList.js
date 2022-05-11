@@ -1,5 +1,7 @@
 import './WorkList.css';
 import { useState } from 'react';
+import { ReactComponent as YourSvg } from '../images/prism.svg';
+
 
 
 function WorkList(props) {
@@ -19,6 +21,7 @@ function WorkList(props) {
           return <li className="work-item"><a style={{color: 'white'}} href={i['link']} target='_blank'><u>{i.title}</u></a></li>  
         })}
         </ul>
+        <YourSvg></YourSvg>
     </div>
   );
 }
