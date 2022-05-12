@@ -79,6 +79,11 @@
   opacity: 0.7;
 }
 
+.titles-container{
+  font-size: 16px;
+  padding-top: 16px;
+}
+
 @media (max-width: 600px) {
   .profile-container{
     transform: translate(0%, 50%);
@@ -95,5 +100,8 @@
   .App-header { 
     padding: 20vmin 0px;
     min-height: 83vh;
+  }
+  .titles-container{
+    font-size: 12px;
   }
 }
