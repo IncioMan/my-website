@@ -19,7 +19,7 @@ function WorkList(props) {
            logo:'https://raw.githubusercontent.com/IncioMan/my-website/master/src/images/logo-astroport.svg',
            width: '24px'},
           {title:'Mars Protocol - Launch Dashboard',
-          link:'https://marslockdrop.herokuapp.com/',
+          link:'https://mars-lockdrop.incioman.com',
           logo:'https://raw.githubusercontent.com/IncioMan/my-website/master/src/images/mars.svg',
           width: '24px'},
           {title:'Nebula - Launch Dashboard',
