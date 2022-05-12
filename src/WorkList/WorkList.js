@@ -33,7 +33,7 @@ function WorkList(props) {
         .map((i)=>{
           return <li className="work-item">
                     <div>
-                      <img src={i.logo} width={i.width} style={{paddingRight:'16px'}}/>
+                      <img src={i.logo} width={i.width} style={{paddingRight:'16px',paddingTop:'8px'}}/>
                     </div>
                     <a style={{color: 'white'}} href={i['link']} target='_blank'>
                         <u className='work-title'>{i.title}</u>
