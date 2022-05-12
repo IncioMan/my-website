@@ -29,5 +29,8 @@
 }
 
 @media (max-width: 600px) {
- 
+  .work-title{
+    color: white;
+    font-size: 12px;
+  } 
 }
