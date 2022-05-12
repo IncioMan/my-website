@@ -29,6 +29,10 @@ function WorkList(props) {
           {title:'Prism Protocol - Dashboard',
           link:'https://data.prismprotocol.app/',
           logo:'https://raw.githubusercontent.com/IncioMan/my-website/master/src/images/prism.svg',
+          width: '24px'},
+          {title:'Prism Protocol - Launch Dashboard',
+          link:'https://prism-forge.incioman.com/',
+          logo:'https://raw.githubusercontent.com/IncioMan/my-website/master/src/images/prism.svg',
           width: '24px'}]
         .map((i)=>{
           return <li className="work-item">
