@@ -2,11 +2,15 @@ import logo from './logo.svg';
 import './App.css';
 import WorkList from './WorkList/WorkList';
 import { BsGithub, BsMedium, BsTwitter } from 'react-icons/bs';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 
 function App() {
   const [transition, setTransition] = useState(false)
+
+  useEffect(()=>{
+    setTransition(true)
+  },[])
 
   return (
     <div className="App">
@@ -18,7 +22,6 @@ function App() {
             <a href={'https://github.com/IncioMan'}><BsGithub size={'3em'} className='contact-logo'/></a>
             <a href={'https://medium.com/@incioman'}><BsMedium size={'3em'} className='contact-logo'/></a>
           </div>
-          <button className='work-button' onClick={()=>setTransition(true)}>My Work</button>
         </div>
         <WorkList show={transition}/>
       </header>

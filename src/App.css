@@ -25,6 +25,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
   flex-wrap: wrap;
+  padding: 0px 20vmin;
 }
 
 .App-link {
@@ -67,6 +68,7 @@
 .slide-exit-active {
   transform: translate(0%, 0%);
   transition: transform 1500ms ease-in-out;
+  transition-delay: 2000ms;
 }
 
 .work-button:hover{
@@ -84,9 +86,14 @@
   .slide-exit-active {
     transform: translate(0%, -10%);
     transition: transform 1500ms ease-in-out;
+    transition-delay: 2000ms;
   }  
   .work-button{
       padding: 2vmin 3vmin;
       font-size: 4vmin;
+  }
+  .App-header { 
+    padding: 20vmin 0px;
+    min-height: 83vh;
   }
 }
