@@ -1,6 +1,8 @@
 .work-container{
-  width: 50%;
+  width: 70%;
   min-width: 300px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .hidden{
@@ -26,6 +28,12 @@
 .work-title{
   color: white;
   font-size: 16px;
+}
+
+.work-preview{
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 600px) {
