@@ -45,4 +45,8 @@
     color: white;
     font-size: 12px;
   } 
+  .work-preview{
+    width: 0px;
+    visibility: hidden;
+  }
 }

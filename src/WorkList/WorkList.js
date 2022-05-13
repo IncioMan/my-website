@@ -4,8 +4,12 @@ import { useState } from 'react';
 
 function WorkList(props) {
   const {show} = props
-  const [preview, setPreview] = useState()
-  const [previewDesc, setPreviewDesc] = useState('')
+  const [preview, setPreview] = useState('https://raw.githubusercontent.com/IncioMan/my-website/master/src/images/preview/mars-lockdrop.png')
+  const [previewDesc, setPreviewDesc] = useState('Mars Protocol is a decentralized application developed on the Terra blockchain which allows to lend and borrow assets.\
+  The application also allows for Smart-Contract-to-Smart-Contract lending and borrowing.\
+ The dashboard allowed to visualise the data from the Mars lockdrop event - the launch event of the $MARS token distributed to users locking their $UST into the Red Bank.\
+ The dashboard was built using Streamlit (for the website), Pandas (data manipulation) and Altair (data viz).\
+ ')
 
   console.log(show)
 
@@ -34,7 +38,10 @@ function WorkList(props) {
            link:'https://calculator.levana.finance/',
            preview:'https://raw.githubusercontent.com/IncioMan/my-website/master/src/images/levana.png',
            logo:'https://raw.githubusercontent.com/IncioMan/levana_lockdrop/master/images/favicon.ico',
-           desc:'',
+           desc:'Levana was a DeFi protocol built on the Terra blockchain. It was supposed to \
+           allow users to take leveraged positions. The protocol was planning to launch its LVN token via\
+           a combination of Lockdrop and LBP. This dashboard allows users to predict how many LVN tokens they\
+           would get, based on theirs and others\s locked liquidity and others. The dashboard has been developed using Streamlit.',
            width: '24px'},
 
           {title:'Mars Protocol - Launch Dashboard',
@@ -52,7 +59,10 @@ function WorkList(props) {
           link:'https://lbp-dashboard.neb.money/',
           logo:'https://raw.githubusercontent.com/IncioMan/my-website/master/src/images/NEB.png',
           preview:'https://raw.githubusercontent.com/IncioMan/my-website/master/src/images/preview/nebula.png',
-          desc:'',
+          desc:'Nebula is a protocol built on Terra that enabled users to invest in narratives and strategies expressed through decentralized basket instruments called clusters.\
+          Their token - NEB - has been launched via an LBP mechanism. The dashboard allowed anyone to monitor what\
+          the price of the token was over time and how other users were behaving.\
+          The dashboard was built using Streamlit (for the website), Pandas (data manipulation) and Altair (data viz).',
           width: '24px'},
 
           {title:'Prism Protocol - Dashboard',
@@ -69,7 +79,12 @@ function WorkList(props) {
           desc:'',
           width: '24px'}]
         .map((i)=>{
-          return <li className="work-item" onMouseOver={()=>{
+          return <li className="work-item" 
+          onMouseOut={()=>{
+            setPreview(null);
+            setPreviewDesc(null)
+          }} 
+          onMouseOver={()=>{
             setPreview(i.preview);
             setPreviewDesc(i.desc)
           }}>
