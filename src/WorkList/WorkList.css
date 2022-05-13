@@ -36,6 +36,10 @@
   justify-content: center;
 }
 
+.preview-desc{
+  font-size: 14px;
+}
+
 @media (max-width: 600px) {
   .work-title{
     color: white;

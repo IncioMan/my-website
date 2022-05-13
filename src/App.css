@@ -61,9 +61,9 @@
 }
 
 .profile-container{
-  width: 50%;
+  width: 30%;
   min-width: 300px;
-  transform: translate(50%, 0%);
+  transform: translate(115%, 0%);
 }
 .slide-exit-active {
   transform: translate(0%, 0%);
