@@ -16,13 +16,18 @@ function WorkList(props) {
   return (
     <div className={show?"work-container show":"work-container hidden"}>
       <ul>
-        {[{title:'Astroport - Alternative UI',
+        {[{title:'Terra Rebirth - Voting Dashboard',
+           link:'https://terra-rebirth.incioman.com/',
+           logo:'https://raw.githubusercontent.com/IncioMan/terra-rebirth/master/public/favicon.svg',
+           preview:'https://raw.githubusercontent.com/IncioMan/my-website/master/src/images/preview/terra-rebirth.png',
+           desc:'',
+           width: '24px'},
+           {title:'Astroport - Alternative UI',
            link:'https://astroport.incioman.com/',
            logo:'https://raw.githubusercontent.com/IncioMan/my-website/master/src/images/logo-astroport.svg',
            preview:'https://raw.githubusercontent.com/IncioMan/my-website/master/src/images/preview/astro-ui.png',
            desc:'',
            width: '24px'},
-
           {title:'Astroport - Governance Dashboard',
            link:'https://astroport-governance.incioman.com/',
            logo:'https://raw.githubusercontent.com/IncioMan/my-website/master/src/images/logo-astroport.svg',
