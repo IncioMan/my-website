@@ -20,7 +20,9 @@ function WorkList(props) {
            link:'https://terra-rebirth.incioman.com/',
            logo:'https://raw.githubusercontent.com/IncioMan/terra-rebirth/master/public/favicon.svg',
            preview:'https://raw.githubusercontent.com/IncioMan/my-website/master/src/images/preview/terra-rebirth.png',
-           desc:'',
+           desc:"\
+            This dashboard allows users to explore arguably the most important Terra blockchain governance proposal (1623, Rebirth Terra Network) \
+            with a single voter level of detail, while also obtaining information such as the wallet age and how much time users have waited before casting their vote.",
            width: '24px'},
            {title:'Astroport - Alternative UI',
            link:'https://astroport.incioman.com/',
